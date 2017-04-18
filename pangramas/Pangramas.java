@@ -43,9 +43,11 @@ public class Pangramas
 	{
 		String texto = JOptionPane.showInputDialog(null, "Ingrese el Texto a evaluar");
 		if(isPangrama(texto))
-			System.out.println("El texto: " + texto + " es un pangrama.");
+			//System.out.println("El texto: " + texto + " es un pangrama.");
+			JOptionPane.showMessageDialog(null, "El texto " + texto + " es un pangrama.", "Resultado", JOptionPane.INFORMATION_MESSAGE);
 		else
-			System.out.println("El texto: " + texto + " no es un pangrama.");
+			//System.out.println("El texto: " + texto + " no es un pangrama.");
+			JOptionPane.showMessageDialog(null, "El texto " + texto + " no es un pangrama.", "Resultado", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 }
