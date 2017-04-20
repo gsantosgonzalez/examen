@@ -22,10 +22,7 @@ public class Pangramas
 			}
 		}
 		System.out.println(contador);
-		if(contador == alfabeto.length)
-			return true;
-		else
-			return false;
+                return contador == alfabeto.length;
 	}
 
 	public static String ignoraTildes(String texto)
